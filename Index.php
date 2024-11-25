@@ -67,7 +67,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img src="Assets/Images/Slide image 3.avif" class="d-block w-100" alt="Memories" />
+          <img src="Assets/Images/Slide image 3.jpg" class="d-block w-100" alt="Memories" />
           <div class="carousel-caption d-none d-md-block">
             <h3>Radiant Memories</h3>
             <p>Capturing Happiness</p>
@@ -124,33 +124,35 @@
       <div class="row">
         <div class="col-md-4">
           <div class="service-card">
+          <img src="Assets/Images/Service 1.avif" alt="Wedding Image" width="300" height="200">
             <h3 class="service-title">Wedding</h3>
             <p class="service-desc">Photo and Video</p>
-            <p class="service-price">$2999</p>
-            <a href="Services.php" class="btn btn-outline-secondary">More Details</a>
+            <p class="service-price">Nrs.29,999</p>
+            <a href="Services.php" class="btn btn-outline-secondary">Book Now</a>
           </div>
         </div>
         <div class="col-md-4">
           <div class="service-card">
-            <div class="service-bg"></div>
+          <img src="Assets/Images/Service 2.avif" alt="Wedding Image" width="300" height="200">
             <h3 class="service-title">Portrait</h3>
             <p class="service-desc">Model Photoshoot</p>
-            <p class="service-price">$399</p>
-            <a href="Services.php" class="btn btn-outline-secondary">More Details</a>
+            <p class="service-price">Nrs.4,999</p>
+            <a href="Services.php" class="btn btn-outline-secondary">Book Now</a>
           </div>
         </div>
         <div class="col-md-4">
           <div class="service-card">
-            <div class="service-bg"></div>
+          <img src="Assets/Images/Service 3.avif" alt="Wedding Image" width="300" height="200">
             <h3 class="service-title">Event</h3>
             <p class="service-desc">Photo and Video</p>
-            <p class="service-price">$1999</p>
-            <a href="Services.php" class="btn btn-outline-secondary">More Details</a>
+            <p class="service-price">Nrs.19,999</p>
+            <a href="Services.php" class="btn btn-outline-secondary">Book Now</a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- offer end -->
+    <!-- Services end -->
+    
   </body>
 </html>

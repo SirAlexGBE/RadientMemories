@@ -111,17 +111,15 @@ body {
   margin-top: 20px;
 }
 .about-comma {
-  position: absolute;
+  position: static;
   width: 21.47px;
   height: 40.58px;
-  left: 1061px;
-  top: 1478px;
 
   font-family: "Forum";
   font-style: normal;
   font-weight: 400;
   font-size: 300px;
-  line-height: 331px;
+  line-height: 31px;
   text-align: center;
 
   color: #e9e1d9;
