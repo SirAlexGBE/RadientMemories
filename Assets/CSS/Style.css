@@ -2,47 +2,34 @@ body {
   padding-top: 120px; /* Adjust the value based on the height of your navbar */
 }
 
+/* Navbar Styles */
 .navbar-brand img {
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.9)); /* Add a shadow to the logo for better visibility */
 }
-
 .navbar {
   background-color: rgba(255, 255, 255, 0.1); /* White with 70% opacity */
   backdrop-filter: blur(10px); /* Optional: Creates frosted glass effect */
 }
-.navbar-nav .nav-link {
+.navbar-nav .nav-link,
+.nav-item {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #ffffff;
+  color: #fff;
 }
-.nav-item {
-  color: #ffffff;
-}
-
 .navbar-nav .nav-link:hover {
-  color: #ffffff;
+  color: #fff;
 }
 
-.section1 {
-  background-color: #f8f9fa;
-  padding: 40px 0;
-}
-.section1 h2 {
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.section1 p {
-  font-size: 1.25rem;
-  color: #555;
-}
-
-.jumbotron {
+/* Section Styles */
+.section1,
+.jumbotron,
+.about-us {
   background-color: #f8f9fa;
   padding: 40px 0;
 }
 
-.jumbotron h2 {
+.jumbotron1 h2,
+.services-title {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 28px;
@@ -53,14 +40,19 @@ body {
   margin-bottom: 20px;
 }
 
-.jumbotron p {
+.jumbotron1 p,
+.about-description,
+.service-desc {
   font-family: "Cormorant Garamond", serif;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #555;
+}
+.jumbotron1 p {
   font-size: 64px;
   line-height: 78px;
   color: #4f4f4f;
-  margin-bottom: 40px;
 }
-
 .award-image {
   width: 237px;
   height: 183px;
@@ -68,42 +60,69 @@ body {
   display: block;
   margin: 0 auto;
 }
-
-.about-us {
-  background-color: #f8f9fa;
-  padding: 40px 0;
-}
-
 .about-us .img-fluid {
   width: 100%;
-  height: auto;
+  height: 50%;
   max-width: 692px;
   border-radius: 10px;
 }
-
-.about-title {
+.about-title,
+.signature {
   font-family: "Cormorant Garamond", serif;
-  font-size: 40px;
-  line-height: 48px;
+  text-align: center;
   color: #4a4a4a;
   margin-bottom: 20px;
-  text-align: center;
 }
-
-.about-description {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 28px;
-  line-height: 34px;
-  color: #2d2d2d;
-  margin-bottom: 20px;
-}
-
 .signature {
   font-family: "Ephesis", cursive;
   font-size: 60px;
   line-height: 78px;
   color: #545454;
-  text-align: center;
   letter-spacing: 0.05em;
   margin-top: 20px;
+}
+
+/* Service Card Styles */
+.service-card {
+  background: #f8f8f8;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+.service-title {
+  font-family: "Ephesis", cursive;
+  font-size: 60px;
+  line-height: 78px;
+  color: #585858;
+  margin-top: 20px;
+  text-align: center;
+}
+.service-price {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 58px;
+  color: #5b5b5b;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.btn-outline-secondary {
+  margin-top: 20px;
+}
+.about-comma {
+  position: absolute;
+  width: 21.47px;
+  height: 40.58px;
+  left: 1061px;
+  top: 1478px;
+
+  font-family: "Forum";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 300px;
+  line-height: 331px;
+  text-align: center;
+
+  color: #e9e1d9;
 }
