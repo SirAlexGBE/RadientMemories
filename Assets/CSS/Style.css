@@ -1,0 +1,109 @@
+body {
+  padding-top: 120px; /* Adjust the value based on the height of your navbar */
+}
+
+.navbar-brand img {
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.9)); /* Add a shadow to the logo for better visibility */
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.1); /* White with 70% opacity */
+  backdrop-filter: blur(10px); /* Optional: Creates frosted glass effect */
+}
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.nav-item {
+  color: #ffffff;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.section1 {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
+.section1 h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section1 p {
+  font-size: 1.25rem;
+  color: #555;
+}
+
+.jumbotron {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
+
+.jumbotron h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #bba085;
+  margin-bottom: 20px;
+}
+
+.jumbotron p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 64px;
+  line-height: 78px;
+  color: #4f4f4f;
+  margin-bottom: 40px;
+}
+
+.award-image {
+  width: 237px;
+  height: 183px;
+  background: url("Assets/Images/Camera.webp") no-repeat center center;
+  display: block;
+  margin: 0 auto;
+}
+
+.about-us {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+}
+
+.about-us .img-fluid {
+  width: 100%;
+  height: auto;
+  max-width: 692px;
+  border-radius: 10px;
+}
+
+.about-title {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 40px;
+  line-height: 48px;
+  color: #4a4a4a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-description {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 28px;
+  line-height: 34px;
+  color: #2d2d2d;
+  margin-bottom: 20px;
+}
+
+.signature {
+  font-family: "Ephesis", cursive;
+  font-size: 60px;
+  line-height: 78px;
+  color: #545454;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-top: 20px;
+}
