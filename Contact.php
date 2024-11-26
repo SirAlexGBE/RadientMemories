@@ -73,16 +73,9 @@
     </nav>
     <!-- Navigation bar end -->
 
-    <!-- creative text start -->
-    <div class="jumbotron1 text-center my-5">
-      <img src="Assets/Images/Camera.webp" alt="Award Winning Photography" class="award-image" />
-      <h2>AWARD WINNING PHOTOGRAPHY</h2>
-      <p class="lead">Showcasing your big day in a memorable and unforgettable way.</p>
-    </div>
-    <!-- creative text end -->
-
     <!-- contact start -->
-    <div class="container my-5">
+
+    <div class="container my-5" style="padding: 10px">
       <h4 class="contact-title" style="font-family: 'Raleway'; font-weight: 500; font-size: 28px; color: #bba085; letter-spacing: 0.2em">CONTACT</h4>
       <div class="row">
         <div class="col-md-6">
@@ -113,6 +106,43 @@
     </div>
 
     <!-- contact end -->
+    <!-- creative text start -->
+    <div class="jumbotron text-center my-5">
+      <h2 style="font-family: Ephesis; font-weight: 500; font: size 1.2rem; text-align: center; color: #b58b61">Enquire now</h2>
+      <p style="font-family: Cormorant Garamond; font-size: 48px; text-align: center">“YOU WILL NEVER KNOW THE VALUE OF A MOMENT UNTIL IT BECOMES A MEMORY.”</p>
+    </div>
+    <!-- creative text end -->
+    <!-- details start -->
+    <div class="container my-5" style="height: 500px; background: url('Assets/Images/hero.avif') no-repeat center center; background-size: cover; padding: 10px; position: relative">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-4 text-center" style="background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 5px">
+          <i class="fas fa-envelope" style="font-size: 50px; color: #2d2d2d"></i>
+          <div style="font-family: 'Cormorant Garamond', serif; font-style: normal; font-weight: 300; font-size: 27px; line-height: 34px; color: #2d2d2d">
+            EMAIL
+            <br />
+            info.radiantmemories@gmail.com
+          </div>
+        </div>
+        <div class="col-4 text-center" style="background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 5px; margin-top: 20px">
+          <i class="fas fa-map-marker-alt" style="font-size: 50px; color: #2d2d2d"></i>
+          <div style="font-family: 'Cormorant Garamond', serif; font-style: normal; font-weight: 300; font-size: 28px; line-height: 34px; color: #2d2d2d">
+            ADDRESS
+            <br />
+            Radhakrishna Mandir, Raniban Rd, Kathmandu 44600
+          </div>
+        </div>
+        <div class="col-4 text-center" style="background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 5px; margin-top: 20px">
+          <i class="fas fa-phone-alt" style="font-size: 50px; color: #2d2d2d"></i>
+          <div style="font-family: 'Cormorant Garamond', serif; font-style: normal; font-weight: 300; font-size: 28px; line-height: 34px; color: #2d2d2d">
+            CONTACT
+            <br />
+            +977 9812345678
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- detail end -->
     <!-- Footer Start -->
 
     <div class="container-fluid" style="background: #e1edf8; padding: 20px 0; margin-top: 20px">

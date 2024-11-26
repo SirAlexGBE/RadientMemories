@@ -127,7 +127,7 @@
         <div class="col-md-9">
           <h4>Founder & Lead Photographer/Videographer at Radiant Memories</h4>
           <p class="about-description" style="text-align: justify">
-            Alex Kandel is the visionary behind Radiant Memories. As an expert in wedding photography and videography, Alex brings over [insert number of years] years of experience capturing timeless
+            Alex Kandel is the visionary behind Radiant Memories. As an expert in wedding photography and videography, Alex brings over 7 years of experience capturing timeless
             moments with artistry and precision. His journey began with a passion for storytelling through the lens, transforming fleeting emotions into cherished memories. Under Alex's leadership,
             Radiant Memories has grown into one of Kathmandu’s premier photography centers, renowned for its commitment to excellence and personalized service. He oversees all operations, ensuring
             that every project reflects the company’s dedication to quality and creativity. Specializing in weddings, Alex has a unique ability to capture the magic of each couple's special day,
@@ -157,7 +157,7 @@
         <div class="col-md-9">
           <h4>Senior Photographer & Videographer at Radiant Memories</h4>
           <p class="about-description" style="text-align: justify">
-            Bipin Kafle is a seasoned professional in the field of photography and videography at Radiant Memories. With a rich experience spanning [insert number of years], Bipin has been an integral
+            Bipin Kafle is a seasoned professional in the field of photography and videography at Radiant Memories. With a rich experience spanning 5 years, Bipin has been an integral
             part of countless weddings and events, capturing moments that resonate with emotional depth and visual storytelling. His expertise extends beyond technical proficiency; Bipin is celebrated
             for his creative vision and his ability to make subjects feel at ease, resulting in natural and heartfelt images. At Radiant Memories, he collaborates closely with Alex Kandel, bringing a
             shared dedication to quality and an eye for detail to every project. Bipin's work is characterized by its elegance and authenticity, ensuring that each photograph and video he produces is
@@ -186,7 +186,7 @@
         <div class="col-md-9">
           <h4>Senior Editor at Radiant Memories</h4>
           <p class="about-description" style="text-align: justify">
-            Saajan Bista is the creative force behind the editing team at Radiant Memories. With [insert number of years] years of experience in photo and video editing, Saajan ensures that every
+            Saajan Bista is the creative force behind the editing team at Radiant Memories. With 6 years of experience in photo and video editing, Saajan ensures that every
             project is polished to perfection. His keen eye for detail and storytelling transforms raw footage and images into cohesive, compelling narratives. Saajan’s expertise lies in his ability
             to enhance the visual and emotional impact of each project, bringing out the best in every shot. He works closely with photographers and videographers to ensure that the final product not
             only meets but exceeds client expectations. Saajan is known for his innovative techniques and dedication to maintaining the highest standards of quality. His contributions are vital to the

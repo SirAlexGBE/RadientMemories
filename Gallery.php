@@ -68,6 +68,23 @@
   </script>
 </nav>
 <!-- Navigation bar end -->
+<div class="container-fluid" style="background-color: white; margin:0 auto; padding:20px">
+        <div class="container text-center" >
+        <?php
+        // Fetch all image files from the directory with specified extensions
+        $dir = glob('assets/images/*.{jpeg,avif}', GLOB_BRACE);
+
+        // Loop through the images and display them
+        foreach($dir as $value) {
+            ?>
+            <a href="<?php echo $value; ?>">
+            <img src="<?php echo $value; ?>" alt="Gallery Image" style="width: 250px; height: 200px; padding: 10px;">
+          </a>
+            <?php
+        }
+        ?>
+    </div>
+</div>
 
 
 
