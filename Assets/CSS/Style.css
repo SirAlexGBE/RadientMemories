@@ -122,5 +122,140 @@ body {
   line-height: 31px;
   text-align: center;
 
+  color: #5a5046;
+}
+
+/*  */
+.portfolio-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  color: #bba085;
+  margin-bottom: 10px;
+}
+.featured-story {
+  font-family: "Cormorant Garamond";
+  font-weight: 400;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #5b5b5b;
+}
+.portfolio-number {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 145px;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #b58b61;
+}
+.portfolio-name {
+  font-family: "Ephesis";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 46px;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #555555;
+}
+.portfolio-desc {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 34px;
+
+  color: #2d2d2d;
+}
+
+/* testimonial */
+.testimonial-section {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #fff;
+  border-top: 2px solid #e9ecef;
+  border-bottom: 2px solid #e9ecef;
+}
+.testimonial-text {
+  font-family: "Ephesis";
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-top: none;
+  color: #555555;
+}
+.testimonial-comma {
+  font-family: "Forum";
+  font-size: 100px;
+  position: static;
+  text-align: center;
+  margin-bottom: none;
+
   color: #e9e1d9;
 }
+.testimonial-author {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #414141;
+}
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.testimonial-title {
+  font-family: "Ephesis";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #555555;
+}
+
+/* experience */
+/* Container */
+.experience-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap as needed */
+  padding: 20px;
+}
+
+/* Numbers */
+.experience-number {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 128px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #bba085;
+}
+
+/* Labels */
+.experience-label {
+  font-family: "Ephesis", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  color: #535353;
+  text-align: center;
+}
+/* experience */
