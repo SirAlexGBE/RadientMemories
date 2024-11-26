@@ -1,70 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Discover Radiant Memories, your premier photography center in Kathmandu, Nepal. We specialize in capturing life's precious moments—weddings, portraits, events, and more—with stunning clarity and artistry. Book your session today and preserve your memories beautifully!" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Discover Radiant Memories, your premier photography center in Kathmandu, Nepal. We specialize in capturing life's precious moments—weddings, portraits, events, and more—with stunning clarity and artistry. Book your session today and preserve your memories beautifully!" />
+  <meta name="keywords" content="photography center Kathmandu, wedding photography Nepal, event photography Kathmandu, portrait photography Nepal, professional photographer Kathmandu, Radiant Memories" />
+  <meta name="author" content="Alex Kandel" />
 
-    <meta name="keywords" content="photography center Kathmandu, wedding photography Nepal, event photography Kathmandu, portrait photography Nepal, professional photographer Kathmandu, Radiant Memories">
-    
-    <meta name="Author" content="Alex Kandel" />
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <link rel="stylesheet" href="Assets/CSS/Style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&family=Raleway:wght@400;500;600&family=Ephesis&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
 
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="Assets/Images/Logo.png" type="image/x-icon" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  
 
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+  <title>Radiant Memories</title>
+</head>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&family=Raleway:wght@500&family=Ephesis&display=swap" rel="stylesheet" />
-
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="Assets/CSS/Style.css" />
-
-    <link rel="shortcut icon" href="Assets/Images/Logo.png" type="image/x-icon" />
-
-    <!-- bootstrap Js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> </body>
-    <title>Radiant Memories</title>
-  </head>
   <body>
     <!-- Navigation bar start -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent shadow-sm fixed-top">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav w-100 d-flex justify-content-between">
-            <li class="nav-item active"><a class="nav-link" href="Index.php">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="About.php">About</a></li>
-            <li class="nav-item"><a class="nav-link" style="margin-right: 60px" href="Services.php">Services</a></li>
-          </ul>
-          <a class="navbar-brand mx-auto" href="Index.php">
-            <img src="Assets/Images/Logo.png" width="150" height="100" class="d-inline-block align-top" alt="Logo" loading="lazy" />
-          </a>
-          <ul class="navbar-nav w-100 d-flex justify-content-between">
-            <li class="nav-item"><a class="nav-link" href="Portfolio.php">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="Gallery.php">Gallery</a></li>
-            <li class="nav-item"><a class="nav-link" href="Contact.php">Contact</a></li>
-            <button class="btn btn-outline-info" type="submit"><a href="Login.php">Login</a></button>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Navigation bar end -->
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent shadow-sm fixed-top">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav w-100 d-flex justify-content-between">
+        <li class="nav-item"><a class="nav-link" href="Index.php">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="About.php">About</a></li>
+        <li class="nav-item"><a class="nav-link" style="margin-right: 60px" href="Services.php">Services</a></li>
+      </ul>
+      <a class="navbar-brand mx-auto" href="Index.php">
+        <img src="Assets/Images/Logo.png" width="150" height="100" class="d-inline-block align-top" alt="Logo" loading="lazy" />
+      </a>
+      <ul class="navbar-nav w-100 d-flex justify-content-between">
+        <li class="nav-item"><a class="nav-link" href="Portfolio.php">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="Gallery.php">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contact.php">Contact</a></li>
+        <button class="btn btn-outline-info" type="submit"><a href="Login.php">Login</a></button>
+      </ul>
+    </div>
+  </div>
+  <script>
+    // JavaScript to add the active class based on the current page URL
+    document.addEventListener("DOMContentLoaded", function() {
+      var path = window.location.pathname.split("/").pop();
+      var target = document.querySelectorAll('.nav-link[href="'+path+'"]');
+
+      target.forEach(function(link) {
+        link.classList.add('active');
+      });
+    });
+  </script>
+</nav>
+<!-- Navigation bar end -->
+
+
 
     <!-- Carousel start -->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -179,14 +184,14 @@
       <div class="col-md-4">
         <h2 class="portfolio-number">01</h2>
         <h4 class="portfolio-name">Ankit and Priyanka</h4>
-        <p class="portfolio-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p class="portfolio-desc">"Capturing love stories, one moment at a time. Explore the joy and emotion of this beautiful couple's wedding day, preserved with care by Radiant Memories.".</p>
       </div>
         <div class="col-md-8">
           <img src="Assets/Images/Portfolio 1.avif" alt="Wedding Image" height=" 470px"; style="border: 1px solid #ccc; border-radius: 10px">
           <img src="Assets/Images/Portfolio 2.avif" alt="Wedding Image" height=" 470px"; style="border: 1px solid #ccc ;border-radius: 10px">
         </div>
         </div>
-        <a href="Portfolio.php" class="btn btn-outline-info my-5" style="margin-left: 1000px; font-family: 'Cormorant Garamond';">View Gallery</a>
+        <a href="Portfolio.php" class="btn btn-outline-info my-5" style="margin-left: 1000px; font-size:large; font-family: 'Cormorant Garamond';">View Gallery</a>
       </div>
     </div>
     <!-- portfolio end -->
@@ -311,12 +316,13 @@
       <!-- Logo and Social Links -->
       <div class="col-md-4" style="text-align: center;">
         <img src="Assets/Images/Logo.png" alt="Logo" style="width: 200px; height: auto; display: block; margin: 0 auto;">
-        <div style="margin-top: 20px;">
-          <a href="https://www.facebook.com" target="_blank" style="font-size: 30px; margin-right: 10px;"><i class="fa fa-facebook"></i></a>
-          <a href="https://www.instagram.com" target="_blank" style="font-size: 30px; margin-right: 10px;"><i class="fa fa-instagram"></i></a>
-          <a href="https://www.twitter.com" target="_blank" style="font-size: 30px; margin-right: 10px;"><i class="fa fa-twitter"></i></a>
-          <a href="https://www.whatsapp.com" target="_blank" style="font-size: 30px; margin-right: 10px;"><i class="fa fa-whatsapp"></i></a>
-          <a href="https://www.youtube.com" target="_blank" style="font-size: 30px; margin-right: 10px;"><i class="fa fa-youtube"></i></a>
+        <div >
+          <a href="https://www.facebook.com" target="_blank" style="font-size: 30px; margin-right: 10px; color: #3b5998;"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com" target="_blank" style="font-size: 30px; margin-right: 10px; color: #E1306C;"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.twitter.com" target="_blank" style="font-size: 30px; margin-right: 10px; color: #1DA1F2;"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.whatsapp.com" target="_blank" style="font-size: 30px; margin-right: 10px; color: #25D366;"><i class="fa fa-whatsapp"></i></a>
+          <a href="https://www.youtube.com" target="_blank" style="font-size: 30px; margin-right: 10px; color: #FF0000;"><i class="fa fa-youtube"></i></a>
+          <a href="https://www.linkedin.com" target="_blank" style="font-size: 30px; margin-right: 10px; color: #0077B5;"> <i class="fa fa-linkedin"></i> </a>
         </div>
       </div>
       <!-- Google Maps -->
@@ -327,7 +333,7 @@
 
       </div>
     </div>
-    <div class="row" style="text-align: center; margin-top: 20px;">
+    <div class="row" style="text-align: center;">
       <div class="col-12">
         <p style="font-family: 'Cormorant Garamond'; color: #2D2D2D;">&copy; 2024 All Rights Reserved by Radiant Memories</p>
       </div>
@@ -335,10 +341,5 @@
   </div>
 </div>
 <!-- Footer End -->
-
-
-
-
-
-  </body>
+ </body>
 </html>
