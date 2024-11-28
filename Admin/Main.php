@@ -94,7 +94,7 @@ else{
               aria-hidden="true"
               style="font-size: medium"
             ></i>
-            &nbsp; Add Post</a
+            &nbsp; Add Project</a
           >
           <a
             href="view-post.php"
@@ -106,7 +106,7 @@ else{
               aria-hidden= "true"
               style="font-size: medium"
             ></i>
-            &nbsp; View Post</a
+            &nbsp; View Project</a
           >
           <a
             href="reservation.php"
@@ -137,28 +137,21 @@ else{
           <h2 class="display-4 text-center" style="margin-top: 20px">
             Welcome
           </h2>
-          <div class="row">
-            <div
-              class="col-md-4 bg-dark text-light text-center"
-              style="padding: 20px"
-            >
-              <i class="fa fa-user-circle" aria-hidden="true"> Total Users</i>
-            </div>
+          <?php include 'count_data.php'; // Include the PHP script to fetch data ?>
+<div class="row">
+    <div class="col-md-4 bg-dark text-light text-center" style="padding: 20px">
+        <i class="fa fa-user-circle" aria-hidden="true"> Total Users: <br> <br> <?php echo $total_users; ?></i>
+    </div>
 
-            <div
-              class="col-md-4 bg-success text-light text-center"
-              style="padding: 20px"
-            >
-              <i class="fa fa-camera" aria-hidden="true"> Total Bookings</i>
-            </div>
+    <div class="col-md-4 bg-success text-light text-center" style="padding: 20px">
+        <i class="fa fa-camera" aria-hidden="true"> Total Bookings: <br> <br> <?php echo $total_bookings; ?></i>
+    </div>
 
-            <div
-              class="col-md-4 bg-dark text-light text-center"
-              style="padding: 20px"
-            >
-              <i class="fa fa-camera" aria-hidden="true"> Bookings</i>
-            </div>
-          </div>
+    <div class="col-md-4 bg-dark text-light text-center" style="padding: 20px">
+        <i class="fa fa-camera" aria-hidden="true"> Total Projects: <br> <br> <?php echo $total_projects; ?></i>
+    </div>
+</div>
+
         </div>
       </div>
     </div>

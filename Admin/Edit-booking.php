@@ -94,7 +94,7 @@ else{
               aria-hidden="true"
               style="font-size: medium"
             ></i>
-            &nbsp; Add Post</a
+            &nbsp; Add Project</a
           >
           <a
             href="view-post.php"
@@ -106,7 +106,7 @@ else{
               aria-hidden= "true"
               style="font-size: medium"
             ></i>
-            &nbsp; View Post</a
+            &nbsp; View Project</a
           >
           <a
             href="reservation.php"

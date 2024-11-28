@@ -73,11 +73,11 @@ else{
         <div class="col-md-3">
           <a href="add-post.php" class="btn btn-primary btn-block" style="margin-top: 20px">
             <i class="fa fa-plus-square-o" aria-hidden="true" style="font-size: medium"></i>
-            &nbsp; Add Post
+            &nbsp; Add Project
           </a>
           <a href="view-post.php" class="btn btn-primary btn-block" style="margin-top: 20px">
             <i class="fa fa-newspaper-o" aria-hidden="true" style="font-size: medium"></i>
-            &nbsp; View Post
+            &nbsp; View Project
           </a>
           <a href="reservation.php" class="btn btn-primary btn-block" style="margin-top: 20px">
             <i class="fa fa-camera" aria-hidden="true" style="font-size: medium"></i>

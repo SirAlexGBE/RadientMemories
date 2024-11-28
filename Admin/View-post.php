@@ -94,7 +94,7 @@ else{
               aria-hidden="true"
               style="font-size: medium"
             ></i>
-            &nbsp; Add Post</a
+            &nbsp; Add Project</a
           >
           <a
             href="view-post.php"
@@ -106,7 +106,7 @@ else{
               aria-hidden= "true"
               style="font-size: medium"
             ></i>
-            &nbsp; View Post</a
+            &nbsp; View Project</a
           >
           <a
             href="reservation.php"
@@ -135,7 +135,7 @@ else{
         </div>
         <div class="col-md-9">
           <h2 class="display-4 text-center" style="margin-top: 20px">
-            <i class="fa fa-newspaper-o" aria-hidden="true"></i> View All Post
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i> View All Projects
           </h2>
           <!-- row start -->
           <div class="row">
