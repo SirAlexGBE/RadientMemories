@@ -76,26 +76,26 @@
     <div class="container my-5">
       <h1 class="services-title">Book Your Event with Us</h1>
       <div class="jumbotron" style="margin-left: 250px; margin-right: 250px; padding: 50px">
-        <form>
+      <form method="post" action="">
           <div class="mb-3">
             <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name" />
+            <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required/>
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter your email" />
+            <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required/>
           </div>
           <div class="mb-3">
             <label for="phone" class="form-label">Phone</label>
-            <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" />
+            <input type="text" class="form-control" name="phone" id="phone" placeholder="Enter your phone number" required />
           </div>
           <div class="mb-3">
             <label for="checkin" class="form-label">Event Date</label>
-            <input type="date" class="form-control" id="Eventdate" />
+            <input type="date" class="form-control" name="date" id="Eventdate" required />
           </div>
           <div class="mb-3">
-            <label for="packages" class="form-label">Package</label>
-            <select class="form-control" id="packages">
+            <label for="package" class="form-label">Package</label>
+            <select class="form-control" name="package" id="package" required>
               <option>CHOOSE PACKAGE</option>
               <option>Wedding</option>
               <option>Portrait</option>
@@ -103,8 +103,31 @@
             </select>
           </div>
 
-          <button type="submit" class="btn btn-outline-success">Book Now</button>
+          <button type="submit" name="submit" class="btn btn-outline-success">Book Now</button>
         </form>
+        <?php
+        include 'admin/Connection.php';
+        if (isset($_POST['submit'])){
+
+          $a=$_POST['name'];
+          $b=$_POST['email'];
+          $c=$_POST['phone'];
+          $d=$_POST['date'];
+          $e=$_POST['package'];
+
+          $query="insert into bookings (name, email, phone, date, package) values('$a','$b','$c','$d','$e')";
+          $run=mysqli_query($conn,$query);
+          if($run){
+            echo "<script>window.alert('Booking Successful')</script>";
+            echo "<script>window.open('Booking.php','_self')</script>";
+          }
+          else{
+            echo "<script>window.alert('Not Successful ')</script>";
+          }
+        }
+        ?>
+      </div>
+    </div>
       </div>
     </div>
     <!-- Footer Start -->
