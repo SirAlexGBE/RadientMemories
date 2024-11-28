@@ -75,48 +75,10 @@
 
     <!-- Portfolio Start -->
     <div class="container" style="padding-top: 40px">
-      <h2 class="services-title">PORTFOLIO</h2>
-      <h2 class="featured-story">HIGHLIGHTED WORKS</h2>
+      <h2 class="services-title">Gallery</h2>
+      <h2 class="featured-story">Ayush and Priyanka</h2>
     </div>
-    <div class="jumbotron">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img src="Assets/Images/testimonial 1.avif" class="card-img-top" width="300" height="300" alt="Portfolio " />
-              <a href="PortfolioDetails.php" style="text-decoration: none">
-                <div class="card-body">
-                  <h5 class="Client">Ayush & Priyanka</h5>
-                  <h2 class="Event">Wedding</h2>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="Assets/Images/testimonial 1.avif" class="card-img-top" width="300" height="300" alt="Portfolio " />
-              <a href="PortfolioDetails.php" style="text-decoration: none">
-                <div class="card-body">
-                  <h5 class="Client">Ayush & Priyanka</h5>
-                  <h2 class="Event">Wedding</h2>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="Assets/Images/testimonial 1.avif" class="card-img-top" width="300" height="300" alt="Portfolio 1" />
-              <a href="PortfolioDetails.php" style="text-decoration: none">
-                <div class="card-body">
-                  <h5 class="Client">Ayush & Priyanka</h5>
-                  <h2 class="Event">Wedding</h2>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
     <!-- Portfolio End -->
 

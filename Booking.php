@@ -73,53 +73,40 @@
     </nav>
     <!-- Navigation bar end -->
 
-    <!-- Portfolio Start -->
-    <div class="container" style="padding-top: 40px">
-      <h2 class="services-title">PORTFOLIO</h2>
-      <h2 class="featured-story">HIGHLIGHTED WORKS</h2>
-    </div>
-    <div class="jumbotron">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img src="Assets/Images/testimonial 1.avif" class="card-img-top" width="300" height="300" alt="Portfolio " />
-              <a href="PortfolioDetails.php" style="text-decoration: none">
-                <div class="card-body">
-                  <h5 class="Client">Ayush & Priyanka</h5>
-                  <h2 class="Event">Wedding</h2>
-                </div>
-              </a>
-            </div>
+    <div class="container my-5">
+      <h1 class="services-title">Book Your Event with Us</h1>
+      <div class="jumbotron" style="margin-left: 250px; margin-right: 250px; padding: 50px">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" />
           </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="Assets/Images/testimonial 1.avif" class="card-img-top" width="300" height="300" alt="Portfolio " />
-              <a href="PortfolioDetails.php" style="text-decoration: none">
-                <div class="card-body">
-                  <h5 class="Client">Ayush & Priyanka</h5>
-                  <h2 class="Event">Wedding</h2>
-                </div>
-              </a>
-            </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" />
           </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="Assets/Images/testimonial 1.avif" class="card-img-top" width="300" height="300" alt="Portfolio 1" />
-              <a href="PortfolioDetails.php" style="text-decoration: none">
-                <div class="card-body">
-                  <h5 class="Client">Ayush & Priyanka</h5>
-                  <h2 class="Event">Wedding</h2>
-                </div>
-              </a>
-            </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone</label>
+            <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" />
           </div>
-        </div>
+          <div class="mb-3">
+            <label for="checkin" class="form-label">Event Date</label>
+            <input type="date" class="form-control" id="Eventdate" />
+          </div>
+          <div class="mb-3">
+            <label for="packages" class="form-label">Package</label>
+            <select class="form-control" id="packages">
+              <option>CHOOSE PACKAGE</option>
+              <option>Wedding</option>
+              <option>Portrait</option>
+              <option>Event</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-outline-success">Book Now</button>
+        </form>
       </div>
     </div>
-
-    <!-- Portfolio End -->
-
     <!-- Footer Start -->
 
     <div class="container-fluid" style="background: #e1edf8; padding: 20px 0; margin-top: 20px">
