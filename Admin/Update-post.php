@@ -35,9 +35,9 @@ if(isset($_POST['submit'])) {
 
     // Update the database
     if(!empty($cover_name) && !empty($images[0])) {
-        $query = "UPDATE projects SET client='$client', event='$event', date='$date', description='$description', cover_image='$cover_path', images='$images_string' WHERE id='$id'";
+        $query = "UPDATE projects SET client='$client', event='$event', date='$date', description='$description', Cover='$cover_path', images='$images_string' WHERE id='$id'";
     } elseif(!empty($cover_name)) {
-        $query = "UPDATE projects SET client='$client', event='$event', date='$date', description='$description', cover_image='$cover_path' WHERE id='$id'";
+        $query = "UPDATE projects SET client='$client', event='$event', date='$date', description='$description', Cover='$cover_path' WHERE id='$id'";
     } elseif(!empty($images[0])) {
         $query = "UPDATE projects SET client='$client', event='$event', date='$date', description='$description', images='$images_string' WHERE id='$id'";
     } else {

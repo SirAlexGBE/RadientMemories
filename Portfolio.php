@@ -81,47 +81,63 @@
     <div class="jumbotron">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img src="Assets/Images/testimonial 1.avif" class="card-img-top" width="300" height="300" alt="Portfolio " />
-              <a href="PortfolioDetails.php" style="text-decoration: none">
-                <div class="card-body">
-                  <h5 class="Client">Ayush & Priyanka</h5>
-                  <h2 class="Event">Wedding</h2>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="Assets/Images/testimonial 1.avif" class="card-img-top" width="300" height="300" alt="Portfolio " />
-              <a href="PortfolioDetails.php" style="text-decoration: none">
-                <div class="card-body">
-                  <h5 class="Client">Ayush & Priyanka</h5>
-                  <h2 class="Event">Wedding</h2>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img src="Assets/Images/testimonial 1.avif" class="card-img-top" width="300" height="300" alt="Portfolio 1" />
-              <a href="PortfolioDetails.php" style="text-decoration: none">
-                <div class="card-body">
-                  <h5 class="Client">Ayush & Priyanka</h5>
-                  <h2 class="Event">Wedding</h2>
-                </div>
-              </a>
-            </div>
-          </div>
+            <?php 
+                include 'Admin/Connection.php'; 
+                $sql = "SELECT id, client, event, Cover FROM projects"; 
+                $result = $conn->query($sql); 
+                if ($result->num_rows > 0) { 
+                    while($row = $result->fetch_assoc()) { 
+                        echo '
+                        <div class="col-md-4">
+                            <div class="card">
+                                <img src="' . $row["Cover"] . '" class="card-img-top" width="300" height="300" alt="Portfolio">
+                                <a href="PortfolioDetails.php?id=' . $row["id"] . '" style="text-decoration: none">
+                                    <div class="card-body">
+                                        <h5 class="Client">' . $row["client"] . '</h5>
+                                        <h2 class="Event">' . $row["event"] . '</h2>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        '; 
+                    } 
+                } else { 
+                    echo "0 results"; 
+                } 
+                $conn->close(); 
+            ?>
+        </div>
+    </div>
+    
+    </div>
+    <div class="container my-5 text-center">
+      <a href="Contact.php" class="btn btn-outline-info my-5" style="font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 500; font-size: 28px; color: #454545">Get In Touch</a>
+    </div>
+
+    <!-- creative text start -->
+    <div class="jumbotron text-center my-5" style="background: url('Assets/Images/hero 2.avif') no-repeat center center; background-size: cover; height: 300px">
+      <div class="container" style="background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 5px; margin-top: 20px">
+        <div
+          style="
+            font-family: 'Cormorant Garamond', serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 28px;
+            line-height: 34px;
+            color: #2d2d2d;
+            border: #25d366 1px solid;
+            padding: 10px;
+            border-radius: 5px;
+          "
+        >
+          <h4 style="font-family: 'Ephesis'; font-style: normal; font-weight: 400; font-size: 60px; text-align: center; color: #bba085">Our Promise</h4>
+
+          We guarantee breathtaking photos that perfectly capture the magic of your special day, or your money back
         </div>
       </div>
     </div>
-
-    <!-- Portfolio End -->
-
+    <!-- creative text end -->
     <!-- Footer Start -->
-
     <div class="container-fluid" style="background: #e1edf8; padding: 20px 0; margin-top: 20px">
       <div class="row">
         <!-- Contact Us -->
