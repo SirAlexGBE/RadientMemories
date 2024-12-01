@@ -134,10 +134,10 @@ if(isset($_POST['submit'])) {
     include 'Connection.php';
     
     // Get form data
-    $client = $_POST['client'];
-    $event = $_POST['event'];
-    $date = $_POST['date'];
-    $description = $_POST['description'];
+    $client = mysqli_real_escape_string($conn, $_POST['client']);
+    $event = mysqli_real_escape_string($conn, $_POST['event']);
+    $date = mysqli_real_escape_string($conn, $_POST['date']);
+    $description = mysqli_real_escape_string($conn, $_POST['description']);
 
     // Handle cover image upload
     $cover_name = $_FILES['cover']['name'];
@@ -159,7 +159,7 @@ if(isset($_POST['submit'])) {
     $images_string = implode(',', $image_paths);
 
     // Insert data into database
-    $query = "INSERT INTO projects ( event,client, date,  description, Cover, images)
+    $query = "INSERT INTO projects (event, client, date, description, cover, images)
               VALUES ('$event', '$client', '$date', '$description', '$cover_path', '$images_string')";
     $run = mysqli_query($conn, $query);
 
@@ -168,7 +168,9 @@ if(isset($_POST['submit'])) {
     } else {
         echo "<script>alert('Error Found!');</script>";
     }
-}?>
+}
+?>
+
 
 
           <script>

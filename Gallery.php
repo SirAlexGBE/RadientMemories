@@ -33,6 +33,26 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <title>Radiant Memories</title>
+    <style>
+      #toTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: #878787;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 18px;
+      }
+      #toTopBtn:hover {
+        background-color: #333;
+      }
+    </style>
   </head>
 
   <body>
@@ -77,7 +97,7 @@
       <div class="container text-center">
         <?php
         // Fetch all image files from the directory with specified extensions
-        $dir = glob('assets/images/*.{jpeg,avif}', GLOB_BRACE);
+        $dir = glob('assets/images/*.{jpg,webp,jpeg,avif}', GLOB_BRACE);
 
         // Loop through the images and display them
         foreach($dir as $value) {
@@ -90,6 +110,24 @@
         ?>
       </div>
     </div>
+    <button onclick="topFunction()" id="toTopBtn" title="Go to top">Go to Top</button>
+    <script>
+      var mybutton = document.getElementById("toTopBtn");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
 
     <!-- Footer Start -->
 

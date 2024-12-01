@@ -34,7 +34,7 @@
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <style>
@@ -51,13 +51,61 @@
         margin: 10px;
         border-radius: 10px;
       }
+      /* Modal CSS */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 60px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.9);
+      }
+
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+      }
+
+      .modal-content, .close {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+
+      @keyframes zoom {
+        from {transform:scale(0)} 
+        to {transform:scale(1)}
+      }
+
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
     </style>
     <title>Radiant Memories</title>
   </head>
 
   <body>
     <!-- Navigation bar start -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent shadow-sm fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-transparent shadow-sm fixed-top">
       <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -92,75 +140,97 @@
       </script>
     </nav>
     <!-- Navigation bar end -->
-
     <!-- Content start -->
-    <div class="container" style="padding-top: 40px">
-      <h2 class="services-title">Gallery</h2>
-      <?php 
- include 'Admin/connection.php';
+<div class="container" style="padding-top: 40px">
+  <h2 class="services-title">Gallery</h2>
+  <?php 
+  include 'Admin/connection.php';
   $portfolio_id = $_GET['id']; 
   $query = "SELECT * FROM projects WHERE id = '$portfolio_id'"; 
   $result = mysqli_query($conn, $query); 
   $row = mysqli_fetch_assoc($result); 
-?>
-      <h2 class="featured-story"><?php echo $row['client']; ?></h2>
+  ?>
+  <h2 class="featured-story"><?php echo $row['client']; ?></h2>
+</div>
+<div class="container">
+  <div style="display: flex; justify-content: center; align-items: center; padding-top: 40px">
+    <div style="display: flex; align-items: center; margin-right: 40px">
+      <span style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 28px; color: #2d2d2d; margin-right: 10px">Date:</span>
+      <span style="font-family: 'Dancing Script'; font-style: normal; font-weight: 400; font-size: 24px; text-align: center; letter-spacing: 0.05em; color: #bba085">
+        <?php echo date('jS F, Y', strtotime($row['date'])); ?>
+      </span>
     </div>
-    <div class="container">
-      <div style="display: flex; justify-content: center; align-items: center; padding-top: 40px">
-        <div style="display: flex; align-items: center; margin-right: 40px">
-          <span style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 28px; color: #2d2d2d; margin-right: 10px">Date:</span>
-          <span style="font-family: 'Dancing Script'; font-style: normal; font-weight: 400; font-size: 24px; text-align: center; letter-spacing: 0.05em; color: #bba085">
-            <?php echo date('jS F, Y', strtotime($row['date'])); ?>
-          </span>
-        </div>
-        <div style="display: flex; align-items: center; margin-left: 40px">
-          <span style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 28px; color: #2d2d2d; margin-right: 10px">Category:</span>
-          <span style="font-family: 'Dancing Script'; font-style: normal; font-weight: 400; font-size: 24px; text-align: center; letter-spacing: 0.05em; color: #bba085">
-            <?php echo $row['event']; ?>
-          </span>
-        </div>
-      </div>
-      <div style="display: flex; justify-content: center; align-items: center; padding-top: 40px">
-        <img src="<?php echo $row['Cover']; ?>" alt="Cover" style="width: 900px; height: 600px; margin-right: 40px; border-radius: 10px" />
-      </div>
-      <p style="font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 400; font-size: 22px; text-align: center; letter-spacing: 0.05em; color: #000000; padding-top: 40px">
-        <?php echo $row['description']; ?>
-      </p>
+    <div style="display: flex; align-items: center; margin-left: 40px">
+      <span style="font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 28px; color: #2d2d2d; margin-right: 10px">Category:</span>
+      <span style="font-family: 'Dancing Script'; font-style: normal; font-weight: 400; font-size: 24px; text-align: center; letter-spacing: 0.05em; color: #bba085">
+        <?php echo $row['event']; ?>
+      </span>
     </div>
-    <div class="container">
-      <div class="image-container">
-        <?php 
-        $images = explode(',', $row['images']);
-         foreach ($images as $image) { 
-          echo ' 
-          <img src="' . trim($image) . '" alt="Portfolio Image" class="img-fluid portfolio-image" style="border-radius: 10px" />
-        '; } ?>
-      </div>
-    </div>
+  </div>
+  <div style="display: flex; justify-content: center; align-items: center; padding-top: 40px">
+    <img src="<?php echo $row['Cover']; ?>" alt="Cover" style="width: 900px; height: 600px; margin-right: 40px; border-radius: 10px" />
+  </div>
+  <p style="font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 400; font-size: 22px; text-align: center; letter-spacing: 0.05em; color: #000000; padding-top: 40px">
+    <?php echo $row['description']; ?>
+  </p>
+</div>
+<div class="container">
+  <div class="image-container">
+    <?php 
+    $images = explode(',', $row['images']);
+     foreach ($images as $image) { 
+      echo ' 
+      <img src="' . trim($image) . '" alt="Portfolio Image" class="img-fluid portfolio-image" style="border-radius: 10px" onclick="openModal(this)" />
+    '; } ?>
+  </div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
+<script>
+  // Open the Modal
+  function openModal(imgElement) {
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("modalImg");
+    modal.style.display = "block";
+    modalImg.src = imgElement.src;
+    navbar.style.display = "none";
+  }
+
+  // Close the Modal
+  $(document).ready(function(){
+    $(".close").click(function(){
+      $("#myModal").css("display", "none");
+      $("#navbar").css("display", "block");
+    });
+  });
+</script>
+
+
 
     <!-- Content end -->
     <div class="container my-5 text-center">
       <h2 style="font-family: Ephesis; font-weight: 500; font-size: 1.6rem; text-align: center; color: #b58b61">More Works</h2>
       <div class="row" style=" display: flex; justify-content: center; align-items: center;">
-          <?php 
-          include 'Admin/Connection.php';
-          $sql = "SELECT id, Cover FROM projects"; 
-          $result = $conn->query($sql); 
-          if ($result->num_rows > 0) { 
-              while($row = $result->fetch_assoc()) { 
-                  echo '
-                  <div class="col-md-3">
-                      <a href="PortfolioDetails.php?id=' . $row["id"] . '" style="text-decoration: none">
-                          <img src="'. $row["Cover"] . '" class="img-fluid" style="width: 300px; height: 300px" alt="Portfolio">
-                      </a>
-                  </div>
-                  '; 
-              } 
-          } else { 
-              echo "0 results"; 
-          } 
-          $conn->close(); 
-          ?>
+        <?php
+        $sql = "SELECT id, Cover FROM projects Where id!= '$portfolio_id' ORDER BY RAND() LIMIT 4"; 
+        $result = $conn->query($sql); 
+        if ($result->num_rows > 0) { while($row = $result->fetch_assoc()) { 
+          echo ' 
+          <div class="col-md-3" style="padding: 10px"> 
+            <a href="PortfolioDetails.php?id=' . $row["id"] . '" style="text-decoration: none"> <img src="'. $row["Cover"] . '" class="img-fluid" style="width: 300px; height: 300px; border-radius: 10px" alt="Portfolio">
+             </a> 
+            </div> 
+            '; } } 
+            else { 
+              echo "0 results";
+             } 
+             $conn->close(); 
+             ?>
       </div>
   </div>
   

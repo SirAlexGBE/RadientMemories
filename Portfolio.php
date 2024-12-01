@@ -80,7 +80,7 @@
     </div>
     <div class="jumbotron">
       <div class="container">
-        <div class="row">
+        <div class="row" style="margin-top: 2px;">
             <?php 
                 include 'Admin/Connection.php'; 
                 $sql = "SELECT id, client, event, Cover FROM projects"; 
