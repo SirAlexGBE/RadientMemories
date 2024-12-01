@@ -78,37 +78,58 @@
       <h2 class="services-title">PORTFOLIO</h2>
       <h2 class="featured-story">HIGHLIGHTED WORKS</h2>
     </div>
+    <div class="container" style="padding-top: 20px">
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <label for="eventFilter">Filter by Event</label>
+          <select id="eventFilter" class="form-select" onchange="filterProjects()" >
+            
+            <option value="all">All Events</option>
+            <option value="Wedding">Wedding</option>
+            <option value="Portrait">Portrait</option>
+            <option value="Others">Others</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label for="orderFilter">Sort by Date</label>
+          <select id="orderFilter" class="form-select" onchange="sortProjects()">
+            <option value="desc">Newest First</option>
+            <option value="asc">Oldest First</option>
+           
+          </select>
+        </div>
+      </div>
+    </div>
     <div class="jumbotron">
       <div class="container">
-        <div class="row" style="margin-top: 2px;">
-            <?php 
-                include 'Admin/Connection.php'; 
-                $sql = "SELECT id, client, event, Cover FROM projects"; 
-                $result = $conn->query($sql); 
-                if ($result->num_rows > 0) { 
-                    while($row = $result->fetch_assoc()) { 
-                        echo '
-                        <div class="col-md-4">
-                            <div class="card">
-                                <img src="' . $row["Cover"] . '" class="card-img-top" width="300" height="300" alt="Portfolio">
-                                <a href="PortfolioDetails.php?id=' . $row["id"] . '" style="text-decoration: none">
-                                    <div class="card-body">
-                                        <h5 class="Client">' . $row["client"] . '</h5>
-                                        <h2 class="Event">' . $row["event"] . '</h2>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        '; 
-                    } 
-                } else { 
-                    echo "0 results"; 
-                } 
-                $conn->close(); 
-            ?>
+        <div class="row" id="projectsContainer" style="margin-top: 2px">
+          <?php 
+include 'Admin/Connection.php';
+ $sql = "SELECT id, client, event, Cover, date FROM projects"; 
+$result = $conn->query($sql); 
+if ($result->num_rows > 0) { 
+while($row = $result->fetch_assoc()) { 
+$eventCategory = strtolower($row["event"]); 
+$category = ($eventCategory === 'wedding' || $eventCategory === 'portrait') ? $eventCategory : 'others'; 
+echo ' 
+<div class="col-md-4 project-item" data-event="' . $category . '" data-date="' . $row["date"] . '" data-title="' . $row["client"] . '"> 
+<div class="card"> <img src="' . $row["Cover"] . '" class="card-img-top" width="300" height="300" alt="Portfolio"> 
+<a href="PortfolioDetails.php?id=' . $row["id"] . '" style="text-decoration: none">
+ <div class="card-body"> 
+<h5 class="Client">' . $row["client"] . '</h5> 
+<h2 class="Event">' . $row["event"] . '</h2> 
+</div> 
+</a> 
+</div> 
+</div> 
+'; } 
+} else {
+ echo "0 results";
+ }
+ $conn->close();
+ ?>
         </div>
-    </div>
-    
+      </div>
     </div>
     <div class="container my-5 text-center">
       <a href="Contact.php" class="btn btn-outline-info my-5" style="font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 500; font-size: 28px; color: #454545">Get In Touch</a>
@@ -137,6 +158,36 @@
       </div>
     </div>
     <!-- creative text end -->
+
+    <script>
+      function filterProjects() {
+        let filter = document.getElementById("eventFilter").value.toLowerCase();
+        let projects = document.querySelectorAll(".project-item");
+        projects.forEach((project) => {
+          let event = project.getAttribute("data-event").toLowerCase();
+          if (filter === "all" || event === filter) {
+            project.style.display = "block";
+          } else {
+            project.style.display = "none";
+          }
+        });
+      }
+      function sortProjects() {
+        let order = document.getElementById("orderFilter").value;
+        let projects = Array.from(document.querySelectorAll(".project-item"));
+        let container = document.getElementById("projectsContainer");
+        projects.sort((a, b) => {
+          let aValue = a.getAttribute("data-date");
+          let bValue = b.getAttribute("data-date");
+          return order === "asc" ? new Date(aValue) - new Date(bValue) : new Date(bValue) - new Date(aValue);
+        });
+        projects.forEach((project) => container.appendChild(project));
+      }
+      document.addEventListener("DOMContentLoaded", () => {
+        filterProjects();
+        sortProjects();
+      });
+    </script>
     <!-- Footer Start -->
     <div class="container-fluid" style="background: #e1edf8; padding: 20px 0; margin-top: 20px">
       <div class="row">
