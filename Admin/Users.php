@@ -129,7 +129,7 @@ else{
                   <td><?php echo $d;?></td>
                   <td><?php echo $e;?></td>
                   <td><a href="EditUsers.php?ID=<?php echo $a;?> &First_Name=<?php echo $b;?>&Last_Name=<?php echo $c;?> &Username=<?php echo $d;?> &Password=<?php echo $e;?>">Edit</a></td>
-                  <td><a href="delete.php?Del=<?php echo $a; ?>">Delete</a></td>
+                  <td><a href="Delete-user.php?Del=<?php echo $a; ?>">Delete</a></td>
                 </tr>
                 <?php
                 }

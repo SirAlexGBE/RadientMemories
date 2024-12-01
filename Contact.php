@@ -81,7 +81,7 @@
         <div class="col-md-6">
           <h2 style="font-family: 'Cormorant Garamond'; font-weight: 400; font-size: 30px; line-height: 78px; text-align: center; letter-spacing: 0.05em; color: #5b5b5b">Get in Touch</h2>
 
-          <form>
+          <form action="#" method="post">
             <div class="form-group" style="margin-top: 20px">
               <label for="name" style="font-family: 'Cormorant Garamond'; font-weight: 300; font-size: 28px; color: #2d2d2d">Name</label>
               <input type="text" class="form-control" id="name" placeholder="Enter your name" />
@@ -98,6 +98,24 @@
               Send
             </button>
           </form>
+          <?php
+          if(isset($_POST['submit'])){
+            $to="ctit23.ylk@ismt.edu.np";
+            $name=$_POST['name'];
+            $email=$_POST['email'];
+            $message=$name."<br>".$email ."<br>".$_POST['message'];
+            $subject="Query by" .$name;
+            $headers="From: $email";
+            if(mail($to,$subject,$message,$headers)){
+              echo "Message Sent Successfully";
+            }
+            else{
+              echo "mail not sent";
+            }
+          }
+          
+          ?>
+
         </div>
         <div class="col-md-6">
           <img src="Assets/Images/contact.avif" class="img-fluid" alt="Contact Image" style="width: 90%; height: 600px" />
