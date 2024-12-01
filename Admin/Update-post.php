@@ -7,7 +7,7 @@ if(isset($_POST['submit'])) {
     $client = $_POST['client1'];
     $event = $_POST['event1'];
     $date = $_POST['date1'];
-    $description = $_POST['description1'];
+    $description = mysqli_real_escape_string($conn, $_POST['description1']);
 
     // Handle cover image upload
     $cover_name = $_FILES['cover1']['name'];
