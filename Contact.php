@@ -84,17 +84,17 @@
           <form action="#" method="post">
             <div class="form-group" style="margin-top: 20px">
               <label for="name" style="font-family: 'Cormorant Garamond'; font-weight: 300; font-size: 28px; color: #2d2d2d">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Enter your name" />
+              <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name" />
             </div>
             <div class="form-group" style="margin-top: 20px">
               <label for="email" style="font-family: 'Cormorant Garamond'; font-weight: 300; font-size: 28px; color: #2d2d2d">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter your email" />
+              <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email" />
             </div>
             <div class="form-group" style="margin-top: 20px">
               <label for="message" style="font-family: 'Cormorant Garamond'; font-weight: 300; font-size: 28px; color: #2d2d2d">Message</label>
-              <textarea class="form-control" id="message" rows="5"></textarea>
+              <textarea class="form-control" name="message" id="message" rows="5"></textarea>
             </div>
-            <button type="submit" class="btn btn-outline-info" style="margin-top: 10px; font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 400; font-size: 28px; color: #505050">
+            <button type="submit" name="submit" class="btn btn-outline-info" style="margin-top: 10px; font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 400; font-size: 28px; color: #505050">
               Send
             </button>
           </form>
