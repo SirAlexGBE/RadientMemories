@@ -74,7 +74,7 @@
     <!-- Navigation bar end -->
 
     <!-- About Us start -->
-    <div class="jumbotron">
+    <div class="jumbotron"">
       <h2 class="portfolio-title">About Us</h2>
       <h1 class="display-3 text-center featured-story">Our Story</h1>
       <div class="container my-5">
@@ -99,34 +99,26 @@
       </div>
     </div>
     <!-- About Us end -->
-    <!-- portfolio start -->
-    <div class="container my-5">
-      <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-8">
-          <img src="Assets/Images/Portfolio 1.avif" alt="Wedding Image" height=" 470px" ; style="border: 1px solid #ccc; border-radius: 10px" />
-          <img src="Assets/Images/Portfolio 2.avif" alt="Wedding Image" height=" 470px" ; style="border: 1px solid #ccc; border-radius: 10px" />
-        </div>
-        <div class="col-md-2"></div>
-        <a href="Portfolio.php" class="btn btn-outline-info my-5" style="margin-top: none; margin-left: 800px; width: 130px; height: 40px; font-size: large; font-family: 'Cormorant Garamond'">
-          View portfolio
-        </a>
+    <!-- Our team -->
+    <div class="container" style="padding: 10px">
+    <h4 class="services-title">Get To Know Us</h4>
+    <h2 class="featured-story">Our Team</h2>
+
+<div style="width: 100%; padding: 20px;">
+  <!-- Team Member 1 -->
+  <div class="container" style="display: flex; align-items: center; min-height: 300px;">
+    <div style="flex: 1; text-align: center;">
+      <img src="Assets/Images/Team 1.jpg" alt="Alex Kandel" style="width: 250px; height: 250px; border-radius: 50%; border: 5px solid #f8f9fa; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); object-fit: cover;">
+      <h5 style="margin-top: 15px; font-weight: 700;">Alex Kandel</h5>
+      <div style="margin-top: 10px;">
+        <a href="#" style="color: #000; margin-right: 10px; font-size: 18px;"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" style="color: #000; margin-right: 10px; font-size: 18px;"><i class="fab fa-twitter"></i></a>
+        <a href="#" style="color: #000; font-size: 18px;"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
-    <!-- portfolio end -->
-    <!-- Our team -->
-    <div class="container">
-      <h4 class="services-title">Get To Know Us</h4>
-      <h2 class="featured-story">Our Team</h2>
-    </div>
-    <div class="jumbotron" style="padding: 10px">
-      <div class="row">
-        <div class="col-md-3">
-          <img src="Assets/Images/Team 1.jpg" class="img-thumbnail" alt="Team 1" height="410px" width="280px" />
-        </div>
-        <div class="col-md-9">
-          <h4>Founder & Lead Photographer/Videographer at Radiant Memories</h4>
-          <p class="about-description" style="text-align: justify">
+    <div style="flex: 2; padding-left: 20px;">
+      <h4 style="font-weight: 700;">Founder & Lead Photographer/Videographer</h4>
+      <p class="about-description" style="text-align: justify">
             Alex Kandel is the visionary behind Radiant Memories. As an expert in wedding photography and videography, Alex brings over 7 years of experience capturing timeless
             moments with artistry and precision. His journey began with a passion for storytelling through the lens, transforming fleeting emotions into cherished memories. Under Alex's leadership,
             Radiant Memories has grown into one of Kathmandu’s premier photography centers, renowned for its commitment to excellence and personalized service. He oversees all operations, ensuring
@@ -135,28 +127,23 @@
             for his warm approach and keen eye for detail, making clients feel at ease and ensuring their vision is beautifully realized. His dedication to his craft and clients is at the heart of
             Radiant Memories’ success. Whether you’re celebrating your wedding, an engagement, or a special event, Alex’s passion and expertise guarantee memories you’ll treasure forever.
           </p>
-        </div>
+    </div>
+  </div>
+
+  <!-- Team Member 2 -->
+  <div class="container" style="display: flex; align-items: center; margin-bottom: 50px; min-height: 300px;">
+  <div style="flex: 1; text-align: center;">
+    <img src="Assets/Images/Team 2.jpg" alt="Bipin Kafle" style="width: 200px; height: 200px; border-radius: 50%; border: 5px solid #f8f9fa; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); object-fit: cover;">
+    <h5 style="margin-top: 15px; font-weight: 700;">Bipin Kafle</h5>
+    <div style="margin-top: 10px;">
+        <a href="#" style="color: #000; margin-right: 10px; font-size: 18px;"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" style="color: #000; margin-right: 10px; font-size: 18px;"><i class="fab fa-twitter"></i></a>
+        <a href="#" style="color: #000; font-size: 18px;"><i class="fab fa-instagram"></i></a>
       </div>
-      <div class="container" style="padding: 0; width: 100%">
-        <div class="row">
-          <div class="col">
-            <div class="alex-kandel" style="font-family: 'Inter'; font-style: normal; font-weight: 600; font-size: 14px; color: #000000">
-              ALEX KANDEL
-              <!-- Font Awesome social icons -->
-              <i class="fab fa-facebook-f" style="font-size: 24px; color: #000000; margin-left: 10px"></i>
-              <i class="fab fa-twitter" style="font-size: 24px; color: #000000; margin-left: 10px"></i>
-              <i class="fab fa-instagram" style="font-size: 24px; color: #000000; margin-left: 10px"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-4">
-        <div class="col-md-3">
-          <img src="Assets/Images/Team 2.jpg" class="img-thumbnail" alt="Team 2" height="340px" width="280px" />
-        </div>
-        <div class="col-md-9">
-          <h4>Senior Photographer & Videographer at Radiant Memories</h4>
-          <p class="about-description" style="text-align: justify">
+    </div>
+    <div style="flex: 2; padding-left: 20px;">
+      <h4 style="font-weight: 700;">Senior Photographer & Videographer</h4>
+      <p class="about-description" style="text-align: justify">
             Bipin Kafle is a seasoned professional in the field of photography and videography at Radiant Memories. With a rich experience spanning 5 years, Bipin has been an integral
             part of countless weddings and events, capturing moments that resonate with emotional depth and visual storytelling. His expertise extends beyond technical proficiency; Bipin is celebrated
             for his creative vision and his ability to make subjects feel at ease, resulting in natural and heartfelt images. At Radiant Memories, he collaborates closely with Alex Kandel, bringing a
@@ -164,28 +151,23 @@
             a true reflection of the event’s spirit. Clients appreciate his professionalism, warmth, and the genuine care he takes in preserving their most cherished memories. Whether it's a wedding,
             an engagement, or any special occasion, Bipin’s artistry and commitment shine through in every frame.
           </p>
-        </div>
+    </div>
+  </div>
+
+  <!-- Team Member 3 -->
+  <div class="container" style="display: flex; align-items: center; margin-bottom: 50px; min-height: 300px;">
+  <div style="flex: 1; text-align: center;">
+    <img src="Assets/Images/Team 3.jpg" alt="Saajan Bista" style="width: 200px; height: 200px; border-radius: 50%; border: 5px solid #f8f9fa; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); object-fit: cover;">
+    <h5 style="margin-top: 15px; font-weight: 700;">Saajan Bista</h5>
+    <div style="margin-top: 10px;">
+        <a href="#" style="color: #000; margin-right: 10px; font-size: 18px;"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" style="color: #000; margin-right: 10px; font-size: 18px;"><i class="fab fa-twitter"></i></a>
+        <a href="#" style="color: #000; font-size: 18px;"><i class="fab fa-instagram"></i></a>
       </div>
-      <div class="container" style="padding: 0; width: 100%">
-        <div class="row">
-          <div class="col">
-            <div class="bipin-kafle" style="font-family: 'Inter'; font-style: normal; font-weight: 600; font-size: 14px; color: #000000">
-              BIPIN KAFLE
-              <!-- Font Awesome social icons -->
-              <i class="fab fa-facebook-f" style="font-size: 24px; color: #000000; margin-left: 10px"></i>
-              <i class="fab fa-twitter" style="font-size: 24px; color: #000000; margin-left: 10px"></i>
-              <i class="fab fa-instagram" style="font-size: 24px; color: #000000; margin-left: 10px"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-4">
-        <div class="col-md-3">
-          <img src="Assets/Images/Team 3.jpg" class="img-thumbnail" alt="Team 3" height="360px" width="280px" style="margin: 0 auto" />
-        </div>
-        <div class="col-md-9">
-          <h4>Senior Editor at Radiant Memories</h4>
-          <p class="about-description" style="text-align: justify">
+    </div>
+    <div style="flex: 2; padding-left: 20px;">
+      <h4 style="font-weight: 700;">Senior Editor</h4>
+      <p class="about-description" style="text-align: justify">
             Saajan Bista is the creative force behind the editing team at Radiant Memories. With 6 years of experience in photo and video editing, Saajan ensures that every
             project is polished to perfection. His keen eye for detail and storytelling transforms raw footage and images into cohesive, compelling narratives. Saajan’s expertise lies in his ability
             to enhance the visual and emotional impact of each project, bringing out the best in every shot. He works closely with photographers and videographers to ensure that the final product not
@@ -193,26 +175,15 @@
             success of Radiant Memories, ensuring that every moment captured is beautifully preserved and presented. Clients appreciate his meticulous approach and the passion he brings to his work,
             making sure that every memory is presented in its best light.
           </p>
-        </div>
-      </div>
-      <div class="container" style="padding: 0; width: 100%">
-        <div class="row">
-          <div class="col">
-            <div class="saajan-bista" style="font-family: 'Inter'; font-style: normal; font-weight: 600; font-size: 14px; color: #000000">
-              SAAJAN BISTA
-              <!-- Font Awesome social icons -->
-              <i class="fab fa-facebook-f" style="font-size: 24px; color: #000000; margin-left: 10px"></i>
-              <i class="fab fa-twitter" style="font-size: 24px; color: #000000; margin-left: 10px"></i>
-              <i class="fab fa-instagram" style="font-size: 24px; color: #000000; margin-left: 10px"></i>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+  </div>
+</div>
+</div>
+
 
     <!-- out team end -->
     <!-- Awards start -->
-    <div class="container">
+    <div class="jumbotron jumbotron-fluid" style="padding: 10px">
       <h2 class="testimonial-title">Awards</h2>
       <div class="container">
         <div class="row">
@@ -243,12 +214,11 @@
     <!-- Award end -->
 
     <!-- creative start -->
-    <div class="jumbotron jumbotron-fluid" style="padding: 10px">
-      <div class="row">
-        <div class="col-md-6">
+      <div class="row" style="padding: 20px">
+        <div class="col-md-8">
           <h4 class="services-title">Crafting Memories</h4>
           <h2 class="featured-story">Your Story, Our Lens</h2>
-          <p style="font-family: Cormorant Garamond; font-size: 28px">
+          <p style="font-family: Cormorant Garamond; font-size: 28px; text-align: justify; padding: 50px">
             Your wedding day is a once-in-a-lifetime event, and choosing the right photographer is essential to preserving its magic for years to come. we would be honored to be a part of your special
             day.
           </p>
@@ -257,9 +227,8 @@
           <img src="Assets/Images/creative 1.avif" alt="kissing" style="height: 400px; width: 300px" />
         </div>
 
-        <div class="col-md-3"></div>
+        <div class="col-md-1"></div>
       </div>
-    </div>
     <!-- creative end -->
 
     <!-- Footer Start -->
