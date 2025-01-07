@@ -202,8 +202,7 @@
         <div class="col-md-4" style="text-align: center">
           <h4>Locate Us</h4>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14019.299145441686!2d77.10994291827024!3d28.544985752527197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1c3f7679573f%3A0xa6cf20e5f7741834!2sRadiant%20Photographer!5e0!3m2!1sen!2snp!4v1732616250907!5m2!1sen!2snp"
-            width="300"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.587661007024!2d85.28491257514507!3d27.730014776169572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18966e51427b%3A0x5e2afbc70bfc5ec3!2sRadha%20Krishna%20Temple%2C%20Raniban!5e0!3m2!1sen!2snp!4v1736250597458!5m2!1sen!2snp"            width="300"
             height="250"
             style="border: 0"
             allowfullscreen=""
