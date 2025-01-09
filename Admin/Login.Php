@@ -77,11 +77,6 @@ session_start();
          }
         }
         ?>
-              <div>
-                <br />
-                <H6>Don't have an account?</H6>
-                <a href="Signup.php" class="btn btn-success btn-block">Create a new account</a>
-              </div>
               <script>
                 $(document).ready(function () {
                   $("#show_hide_password a").on("click", function (event) {

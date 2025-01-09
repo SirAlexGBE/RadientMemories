@@ -75,7 +75,6 @@
             <li class="nav-item"><a class="nav-link" href="Portfolio.php">Portfolio</a></li>
             <li class="nav-item"><a class="nav-link" href="Gallery.php">Gallery</a></li>
             <li class="nav-item"><a class="nav-link" href="Contact.php">Contact</a></li>
-            <button class="btn btn-outline-info" type="submit"><a href="Admin/Login.php">Login</a></button>
           </ul>
         </div>
       </div>
