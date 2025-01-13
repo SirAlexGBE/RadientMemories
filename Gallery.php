@@ -33,100 +33,208 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <title>Radiant Memories</title>
-    <style>
-      #toTopBtn {
+<style>
+  #toTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #878787;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  #toTopBtn:hover {
+    background-color: #333;
+  }
+
+  .gallery-container {
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    align-items: stretch; 
+  }
+
+  .gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 10px;
+  }
+
+  .gallery-link {
+    display: block;
+    position: relative;
+  }
+.modal {
         display: none;
         position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 99;
-        border: none;
-        outline: none;
-        background-color: #878787;
-        color: white;
+        z-index: 1;
+        padding-top: 60px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.9);
+      }
+
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+      }
+
+      .modal-content, .close {
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+
+      @keyframes zoom {
+        from {transform:scale(0)} 
+        to {transform:scale(1)}
+      }
+
+      .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #bbb;
+        text-decoration: none;
         cursor: pointer;
-        padding: 10px;
-        border-radius: 10px;
-        font-size: 18px;
       }
-      #toTopBtn:hover {
-        background-color: #333;
-      }
-    </style>
-  </head>
+</style>
 
-  <body>
-    <!-- Navigation bar start -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent shadow-sm fixed-top">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav w-100 d-flex justify-content-between">
-            <li class="nav-item"><a class="nav-link" href="Index.php">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="About.php">About</a></li>
-            <li class="nav-item"><a class="nav-link" style="margin-right: 60px" href="Services.php">Services</a></li>
-          </ul>
-          <a class="navbar-brand mx-auto" href="Index.php">
-            <img src="Assets/Images/Logo.png" width="150" height="100" class="d-inline-block align-top" alt="Logo" loading="lazy" />
-          </a>
-          <ul class="navbar-nav w-100 d-flex justify-content-between">
-            <li class="nav-item"><a class="nav-link" href="Portfolio.php">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="Gallery.php">Gallery</a></li>
-            <li class="nav-item"><a class="nav-link" href="Contact.php">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-      <script>
-        // JavaScript to add the active class based on the current page URL
-        document.addEventListener("DOMContentLoaded", function () {
-          var path = window.location.pathname.split("/").pop();
-          var target = document.querySelectorAll('.nav-link[href="' + path + '"]');
-
-          target.forEach(function (link) {
-            link.classList.add("active");
-          });
-        });
-      </script>
-    </nav>
-    <!-- Navigation bar end -->
-    <div class="container-fluid" style="background-color: white; margin: 0 auto; padding: 20px">
-      <h2 class="services-title">GALLERY</h2>
-      <div class="container text-center">
-        <?php
-        // Fetch all image files from the directory with specified extensions
-        $dir = glob('assets/images/*.{jpg,webp,jpeg,avif}', GLOB_BRACE);
-
-        // Loop through the images and display them
-        foreach($dir as $value) {
-            ?>
-        <a href="<?php echo $value; ?>">
-          <img src="<?php echo $value; ?>" alt="Gallery Image" style="width: 250px; height: 200px; padding: 10px" />
+<body>
+  <!-- Navigation bar start -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-transparent shadow-sm fixed-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-100 d-flex justify-content-between">
+          <li class="nav-item"><a class="nav-link" href="Index.php">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="About.php">About</a></li>
+          <li class="nav-item"><a class="nav-link" style="margin-right: 60px" href="Services.php">Services</a></li>
+        </ul>
+        <a class="navbar-brand mx-auto" href="Index.php">
+          <img src="Assets/Images/Logo.png" width="150" height="100" class="d-inline-block align-top" alt="Logo" loading="lazy" />
         </a>
-        <?php
-        }
-        ?>
+        <ul class="navbar-nav w-100 d-flex justify-content-between">
+          <li class="nav-item"><a class="nav-link" href="Portfolio.php">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="Gallery.php">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contact.php">Contact</a></li>
+        </ul>
       </div>
     </div>
-    <button onclick="topFunction()" id="toTopBtn" title="Go to top">Go to Top</button>
-    <script>
-      var mybutton = document.getElementById("toTopBtn");
-      window.onscroll = function () {
-        scrollFunction();
-      };
-      function scrollFunction() {
-        if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
+  </nav>
+  <!-- Navigation bar end -->
+
+  <div class="container-fluid gallery-container">
+  <h2 class="services-title text-center">GALLERY</h2>
+  <div class="gallery-grid">
+    <?php
+    // Fetch all image files from the directory with specified extensions
+    $images = glob('Assets/Images/*.{jpg,webp,jpeg,avif}', GLOB_BRACE);
+
+    // Loop through the images and display them
+    foreach ($images as $image): ?>
+      <a href="#" class="gallery-link" onclick="openModal('<?= htmlspecialchars($image) ?>')"  rel="noopener noreferrer">
+        <img src="<?= htmlspecialchars($image) ?>" alt="Gallery Image" class="gallery-image" loading="lazy" />
+      </a>
+    <?php endforeach; ?>
+  </div>
+</div>
+
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
+  <button onclick="topFunction()" id="toTopBtn" title="Go to top">Go to Top</button>
+
+<script>
+  // Open the Modal
+function openModal(imagePath) {
+  var modal = document.getElementById("myModal");
+  var modalImg = document.getElementById("modalImg");
+  var navbar = document.getElementById("navbar"); // Ensure navbar exists
+
+  modal.style.display = "block";
+  modalImg.src = imagePath; // Use the passed image path directly
+  if (navbar) {
+    navbar.style.display = "none"; // Hide navbar if it exists
+  }
+}
+
+// Close the Modal when clicking the close button
+$(document).ready(function(){
+  $(".close").click(function(){
+    closeModal();
+  });
+});
+
+// Close the Modal when clicking outside the modal content
+window.onclick = function(event) {
+  var modal = document.getElementById("myModal");
+  if (event.target === modal) {
+    closeModal();
+  }
+};
+
+// Define the closeModal function to handle modal closing
+function closeModal() {
+  var modal = document.getElementById("myModal");
+  modal.style.display = "none";
+  var navbar = document.getElementById("navbar");
+  if (navbar) {
+    navbar.style.display = "block"; // Show navbar again
+  }
+}
+
+// Scroll to top button functionality
+var mybutton = document.getElementById("toTopBtn");
+window.onscroll = function () {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+};
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
+
 
     <!-- Footer Start -->
 
