@@ -130,34 +130,59 @@
     </div>
     <!-- creative text end -->
     <!-- details start -->
-    <div class="container my-5" style="height: 500px; background: url('Assets/Images/hero.avif') no-repeat center center; background-size: cover; padding: 10px; position: relative">
-      <div class="row justify-content-center align-items-center h-100">
-        <div class="col-4 text-center" style="background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 5px">
-          <i class="fas fa-envelope" style="font-size: 50px; color: #2d2d2d"></i>
-          <div style="font-family: 'Cormorant Garamond', serif; font-style: normal; font-weight: 300; font-size: 27px; line-height: 34px; color: #2d2d2d">
-            EMAIL
-            <br />
-            info.radiantmemories@gmail.com
-          </div>
-        </div>
-        <div class="col-4 text-center" style="background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 5px; margin-top: 20px">
-          <i class="fas fa-map-marker-alt" style="font-size: 50px; color: #2d2d2d"></i>
-          <div style="font-family: 'Cormorant Garamond', serif; font-style: normal; font-weight: 300; font-size: 28px; line-height: 34px; color: #2d2d2d">
-            ADDRESS
-            <br />
-            Radhakrishna Mandir, Raniban Rd, Kathmandu 44600
-          </div>
-        </div>
-        <div class="col-4 text-center" style="background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 5px; margin-top: 20px">
-          <i class="fas fa-phone-alt" style="font-size: 50px; color: #2d2d2d"></i>
-          <div style="font-family: 'Cormorant Garamond', serif; font-style: normal; font-weight: 300; font-size: 28px; line-height: 34px; color: #2d2d2d">
-            CONTACT
-            <br />
-            +977 9812345678
-          </div>
+    <style>
+  .contact-card {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .contact-card i {
+    font-size: 50px;
+    color: #2d2d2d;
+  }
+  .contact-card .text {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 34px;
+    color: #2d2d2d;
+  }
+</style>
+
+<div class="container my-5" style="height: 500px; background: url('Assets/Images/hero.avif') no-repeat center center; background-size: cover; padding: 10px; position: relative">
+  <div class="row justify-content-center align-items-center h-100">
+    <div class="col-12 col-md-4 mb-3 mb-md-0">
+      <div class="contact-card">
+        <i class="fas fa-envelope"></i>
+        <div class="text">
+          EMAIL<br />
+          <p>info.radiantmemories@gmail.com</p>
         </div>
       </div>
     </div>
+    <div class="col-12 col-md-4 mb-3 mb-md-0">
+      <div class="contact-card">
+        <i class="fas fa-map-marker-alt"></i>
+        <div class="text">
+          ADDRESS<br />
+          Radhakrishna Mandir, Raniban Rd, Kathmandu 44600
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-4">
+      <div class="contact-card">
+        <i class="fas fa-phone-alt"></i>
+        <div class="text">
+          CONTACT<br />
+          +977 9812345678
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <!-- detail end -->
     <!-- Footer Start -->

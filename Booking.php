@@ -72,39 +72,49 @@
     </nav>
     <!-- Navigation bar end -->
 
-    <div class="container my-5">
-      <h1 class="services-title">Book Your Event with Us</h1>
-      <div class="jumbotron" style="margin-left: 250px; margin-right: 250px; padding: 50px">
-      <form method="post" action="">
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required/>
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required/>
-          </div>
-          <div class="mb-3">
-            <label for="phone" class="form-label">Phone</label>
-            <input type="text" class="form-control" name="phone" id="phone" placeholder="Enter your phone number" required />
-          </div>
-          <div class="mb-3">
-            <label for="checkin" class="form-label">Event Date</label>
-            <input type="date" class="form-control" name="date" id="Eventdate" required />
-          </div>
-          <div class="mb-3">
-            <label for="package" class="form-label">Package</label>
-            <select class="form-control" name="package" id="package" required>
-              <option>CHOOSE PACKAGE</option>
-              <option>Wedding</option>
-              <option>Portrait</option>
-              <option>Event</option>
-            </select>
-          </div>
+    <style>
+  .form-container {
+    margin: 0 auto;
+    padding: 50px;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+</style>
 
-          <button type="submit" name="submit" class="btn btn-outline-success">Book Now</button>
-        </form>
-        <?php
+<div class="container my-5">
+  <h1 class="services-title">Book Your Event with Us</h1>
+  <div class="form-container">
+    <form method="post" action="">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email" required />
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Phone</label>
+        <input type="text" class="form-control" name="phone" id="phone" placeholder="Enter your phone number" required />
+      </div>
+      <div class="mb-3">
+        <label for="checkin" class="form-label">Event Date</label>
+        <input type="date" class="form-control" name="date" id="Eventdate" required />
+      </div>
+      <div class="mb-3">
+        <label for="package" class="form-label">Package</label>
+        <select class="form-control" name="package" id="package" required>
+          <option value="">CHOOSE PACKAGE</option>
+          <option>Wedding</option>
+          <option>Portrait</option>
+          <option>Event</option>
+        </select>
+      </div>
+      <button type="submit" name="submit" class="btn btn-outline-success">Book Now</button>
+    </form>
+ <?php
         include 'admin/Connection.php';
         if (isset($_POST['submit'])){
 
@@ -125,10 +135,9 @@
           }
         }
         ?>
-      </div>
-    </div>
-      </div>
-    </div>
+  </div>
+</div>
+
     <!-- Footer Start -->
 
     <div class="container-fluid" style="background: #e1edf8; padding: 20px 0; margin-top: 20px">

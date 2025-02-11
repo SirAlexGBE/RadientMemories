@@ -6,27 +6,46 @@ body {
   overflow-x: hidden;
 }
 
-/* Navbar Styles */
+//* Navbar Styles */
 .navbar-brand img {
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.9)); /* Add a shadow to the logo for better visibility */
 }
+
+/* Default Navbar style for larger screens */
 .navbar {
-  background-color: rgba(255, 255, 255, 0.1); /* White with 70% opacity */
-  backdrop-filter: blur(10px); /* Optional: Creates frosted glass effect */
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent background for larger screens */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
 }
+
+/* Mobile Device Adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    background-color: rgba(255, 255, 255, 1); /* Opaque background for mobile screens */
+    backdrop-filter: none; /* Disable frosted glass effect on mobile */
+  }
+  /* Move the navbar toggler icon to the right */
+  .navbar-toggler {
+    margin-left: auto;
+  }
+}
+
 .navbar-nav .nav-link,
 .nav-item {
   font-size: 1.2rem;
   font-weight: bold;
   color: #010101;
 }
+
 .nav-link:hover {
   color: #c5d700;
 }
+
 .navbar-nav .nav-item .nav-link.active {
-  color: #000000; /* Set the color you want for the active link */
+  color: #000000; /* Set the color for the active link */
   border-bottom: 2px solid #000000; /* Optional: Add a border under the active link */
 }
+
+/* Carousel Styles */
 .carousel-item img {
   max-width: 100%;
   height: auto;

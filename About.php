@@ -74,119 +74,129 @@
 
     <!-- About Us start -->
     <div class="jumbotron"">
-      <h2 class="portfolio-title">About Us</h2>
-      <h1 class="display-3 text-center featured-story">Our Story</h1>
-      <div class="container my-5">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <img src="Assets/Images/About.avif" style="height: 700px" alt="Team Radiant Memories" class="img-fluid rounded" />
-          </div>
-          <div class="col-md-6">
-            <h2 class="about-title">Hello, We are Team Radiant Memories</h2>
-            <p class="about-description" style="text-align: justify">
-              Welcome to Radiant Memories! We are a passionate team of dedicated photographers and skilled editors who have been capturing life's beautiful moments since our early years. With a keen
-              eye for detail and a deep love for the art of photography, we established our studio two years ago to turn our vision into reality. Our team consists of talented photographers and a
-              creative editor, working together to bring your stories to life with stunning images that you’ll cherish forever. At Radiant Memories, we don’t just take pictures — we capture emotions,
-              memories, and experiences.
-            </p>
-            <p class="about-description" style="text-align: justify">
-              We strted this photography studio since 2022. We are a team of passionate photographers who specialize in wedding photography, potrait photography, and event photography. Our team is
-              built of 3 members. Alex Kandel being the leader of the team. Our other team member consist of Bipin Kafle and Saajan Bista.
-            </p>
-          </div>
+    <h2 class="portfolio-title">About Us</h2>
+    <h1 class="display-3 text-center featured-story">Our Story</h1>
+    <div class="container my-5">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="Assets/Images/About.avif" style="height: 700px" alt="Team Radiant Memories" class="img-fluid rounded" />
+        </div>
+        <div class="col-md-6">
+          <h2 class="about-title">Hello, We are Team Radiant Memories</h2>
+          <p class="about-description" style="text-align: justify">
+            Welcome to Radiant Memories! We are a passionate team of dedicated photographers and skilled editors who have been capturing life's beautiful moments since our early years. With a keen eye
+            for detail and a deep love for the art of photography, we established our studio two years ago to turn our vision into reality. Our team consists of talented photographers and a creative
+            editor, working together to bring your stories to life with stunning images that you’ll cherish forever. At Radiant Memories, we don’t just take pictures — we capture emotions, memories,
+            and experiences.
+          </p>
+          <p class="about-description" style="text-align: justify">
+            We started this photography studio since 2022. We are a team of passionate photographers who specialize in wedding photography, potrait photography, and event photography. Our team is
+            built of 3 members. Alex Kandel being the leader of the team. Our other team member consist of Bipin Kafle and Saajan Bista.
+          </p>
         </div>
       </div>
+    </div>
     </div>
     <!-- About Us end -->
     <!-- Our team -->
     <div class="container" style="padding: 10px">
-    <h4 class="services-title">Get To Know Us</h4>
-    <h2 class="featured-story">Our Team</h2>
-
-<div style="width: 100%; padding: 20px;">
-  <!-- Team Member 1 -->
-  <div class="container" style="display: flex; align-items: center; min-height: 300px;">
-    <div style="flex: 1; text-align: center;">
-      <img src="Assets/Images/Team 1.jpg" alt="Alex Kandel" style="width: 250px; height: 250px; border-radius: 50%; border: 5px solid #f8f9fa; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); object-fit: cover;">
-      <h5 style="margin-top: 15px; font-weight: 700;">Alex Kandel</h5>
-      <div style="margin-top: 10px;">
-        <a href="#" style="color: #000; margin-right: 10px; font-size: 18px;"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" style="color: #000; margin-right: 10px; font-size: 18px;"><i class="fab fa-twitter"></i></a>
-        <a href="#" style="color: #000; font-size: 18px;"><i class="fab fa-instagram"></i></a>
+      <h4 class="services-title">Get To Know Us</h4>
+      <h2 class="featured-story">Our Team</h2>
+    </div>
+    <div class="jumbotron" style="padding: 10px; width: 95%; margin-left: 2.5%; margin-right: 2.5%; margin-bottom: 10px; border-radius: 70px">
+      <!-- Team Member 1 -->
+      <div class="row" style="display: flex; align-items: center; min-height: 300px">
+        <div class="col-md-3" style="flex: 1; text-align: center">
+          <img
+            src="Assets/Images/Team 1.jpg"
+            alt="Alex Kandel"
+            style="width: 250px; height: 250px; border-radius: 50%; border: 5px solid #f8f9fa; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); object-fit: cover"
+          />
+          <h5 style="margin-top: 15px; font-weight: 700">Alex Kandel</h5>
+          <div style="margin-top: 10px">
+            <a href="https://www.facebook.com/Neonales" target="_blank" style="color: #000; margin-right: 10px; font-size: 18px"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/Sir69Alex" target="_blank" style="color: #000; margin-right: 10px; font-size: 18px"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/sir69alex/" target="_blank" style="color: #000; font-size: 18px"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-md-9" style="flex: 2; padding-left: 20px">
+          <h4 style="font-weight: 700; text-align: center">Founder & Lead Photographer/Videographer</h4>
+          <p class="about-description" style="text-align: justify">
+            Alex Kandel is the visionary behind Radiant Memories. As an expert in wedding photography and videography, Alex brings over 7 years of experience capturing timeless moments with artistry
+            and precision. His journey began with a passion for storytelling through the lens, transforming fleeting emotions into cherished memories. Under Alex's leadership, Radiant Memories has
+            grown into one of Kathmandu’s premier photography centers, renowned for its commitment to excellence and personalized service. He oversees all operations, ensuring that every project
+            reflects the company’s dedication to quality and creativity. Specializing in weddings, Alex has a unique ability to capture the magic of each couple's special day, focusing on genuine
+            emotions and intimate details. His expertise ensures that every frame tells a story, preserving the essence of each moment. Beyond his technical skills, Alex is known for his warm approach
+            and keen eye for detail, making clients feel at ease and ensuring their vision is beautifully realized. His dedication to his craft and clients is at the heart of Radiant Memories’
+            success. Whether you’re celebrating your wedding, an engagement, or a special event, Alex’s passion and expertise guarantee memories you’ll treasure forever.
+          </p>
+        </div>
       </div>
     </div>
-    <div style="flex: 2; padding-left: 20px;">
-      <h4 style="font-weight: 700;">Founder & Lead Photographer/Videographer</h4>
-      <p class="about-description" style="text-align: justify">
-            Alex Kandel is the visionary behind Radiant Memories. As an expert in wedding photography and videography, Alex brings over 7 years of experience capturing timeless
-            moments with artistry and precision. His journey began with a passion for storytelling through the lens, transforming fleeting emotions into cherished memories. Under Alex's leadership,
-            Radiant Memories has grown into one of Kathmandu’s premier photography centers, renowned for its commitment to excellence and personalized service. He oversees all operations, ensuring
-            that every project reflects the company’s dedication to quality and creativity. Specializing in weddings, Alex has a unique ability to capture the magic of each couple's special day,
-            focusing on genuine emotions and intimate details. His expertise ensures that every frame tells a story, preserving the essence of each moment. Beyond his technical skills, Alex is known
-            for his warm approach and keen eye for detail, making clients feel at ease and ensuring their vision is beautifully realized. His dedication to his craft and clients is at the heart of
-            Radiant Memories’ success. Whether you’re celebrating your wedding, an engagement, or a special event, Alex’s passion and expertise guarantee memories you’ll treasure forever.
+    <!-- Team Member 2 -->
+    <div class="jumbotron" style="padding: 10px; width: 95%; margin-left: 2.5%; margin-right: 2.5%; margin-bottom: 10px; border-radius: 70px">
+      <div class="row" style="display: flex; align-items: center; min-height: 300px">
+        <div class="col-md-3" style="flex: 1; text-align: center">
+          <img
+            src="Assets/Images/Team 2.jpg"
+            alt="Bipin Kafle"
+            style="width: 200px; height: 200px; border-radius: 50%; border: 5px solid #f8f9fa; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); object-fit: cover"
+          />
+          <h5 style="margin-top: 15px; font-weight: 700">Bipin Kafle</h5>
+          <div style="margin-top: 10px">
+            <a href="https://www.facebook.com/beepeen.cafleyxettri" style="color: #000; margin-right: 10px; font-size: 18px"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/BP_kafle23" style="color: #000; margin-right: 10px; font-size: 18px"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/kafle_bp/" style="color: #000; font-size: 18px"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-md-9" style="flex: 2; padding-left: 20px">
+          <h4 style="font-weight: 700; text-align: center">Senior Photographer & Videographer</h4>
+          <p class="about-description" style="text-align: justify">
+            Bipin Kafle is a seasoned professional in the field of photography and videography at Radiant Memories. With a rich experience spanning 5 years, Bipin has been an integral part of
+            countless weddings and events, capturing moments that resonate with emotional depth and visual storytelling. His expertise extends beyond technical proficiency; Bipin is celebrated for his
+            creative vision and his ability to make subjects feel at ease, resulting in natural and heartfelt images. At Radiant Memories, he collaborates closely with Alex Kandel, bringing a shared
+            dedication to quality and an eye for detail to every project. Bipin's work is characterized by its elegance and authenticity, ensuring that each photograph and video he produces is a true
+            reflection of the event’s spirit. Clients appreciate his professionalism, warmth, and the genuine care he takes in preserving their most cherished memories. Whether it's a wedding, an
+            engagement, or any special occasion, Bipin’s artistry and commitment shine through in every frame.
           </p>
-    </div>
-  </div>
-
-  <!-- Team Member 2 -->
-  <div class="container" style="display: flex; align-items: center; margin-bottom: 50px; min-height: 300px;">
-  <div style="flex: 1; text-align: center;">
-    <img src="Assets/Images/Team 2.jpg" alt="Bipin Kafle" style="width: 200px; height: 200px; border-radius: 50%; border: 5px solid #f8f9fa; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); object-fit: cover;">
-    <h5 style="margin-top: 15px; font-weight: 700;">Bipin Kafle</h5>
-    <div style="margin-top: 10px;">
-        <a href="#" style="color: #000; margin-right: 10px; font-size: 18px;"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" style="color: #000; margin-right: 10px; font-size: 18px;"><i class="fab fa-twitter"></i></a>
-        <a href="#" style="color: #000; font-size: 18px;"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
     </div>
-    <div style="flex: 2; padding-left: 20px;">
-      <h4 style="font-weight: 700;">Senior Photographer & Videographer</h4>
-      <p class="about-description" style="text-align: justify">
-            Bipin Kafle is a seasoned professional in the field of photography and videography at Radiant Memories. With a rich experience spanning 5 years, Bipin has been an integral
-            part of countless weddings and events, capturing moments that resonate with emotional depth and visual storytelling. His expertise extends beyond technical proficiency; Bipin is celebrated
-            for his creative vision and his ability to make subjects feel at ease, resulting in natural and heartfelt images. At Radiant Memories, he collaborates closely with Alex Kandel, bringing a
-            shared dedication to quality and an eye for detail to every project. Bipin's work is characterized by its elegance and authenticity, ensuring that each photograph and video he produces is
-            a true reflection of the event’s spirit. Clients appreciate his professionalism, warmth, and the genuine care he takes in preserving their most cherished memories. Whether it's a wedding,
-            an engagement, or any special occasion, Bipin’s artistry and commitment shine through in every frame.
+    <!-- Team Member 3 -->
+    <div class="jumbotron" style="padding: 10px; width: 95%; margin-left: 2.5%; margin-right: 2.5%; margin-bottom: 10px; border-radius: 70px">
+      <div class="row" style="display: flex; align-items: center; min-height: 300px">
+        <div class="col-md-3" style="flex: 1; text-align: center">
+          <img
+            src="Assets/Images/Team 3.jpg"
+            alt="Saajan Bista"
+            style="width: 200px; height: 200px; border-radius: 50%; border: 5px solid #f8f9fa; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); object-fit: cover"
+          />
+          <h5 style="margin-top: 15px; font-weight: 700">Saajan Bista</h5>
+         
+            <a href="https://www.facebook.com/saajanbista101" style="color: #000; margin-right: 10px; font-size: 18px"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/saajanbist" style="color: #000; margin-right: 10px; font-size: 18px"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/saajanbist_" style="color: #000; font-size: 18px"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="col-md-9" style="flex: 2; padding-left: 20px">
+          <h4 style="font-weight: 700; text-align: center">Senior Editor</h4>
+          <p class="about-description" style="text-align: justify">
+            Saajan Bista is the creative force behind the editing team at Radiant Memories. With 6 years of experience in photo and video editing, Saajan ensures that every project is polished to
+            perfection. His keen eye for detail and storytelling transforms raw footage and images into cohesive, compelling narratives. Saajan’s expertise lies in his ability to enhance the visual
+            and emotional impact of each project, bringing out the best in every shot. He works closely with photographers and videographers to ensure that the final product not only meets but exceeds
+            client expectations. Saajan is known for his innovative techniques and dedication to maintaining the highest standards of quality. His contributions are vital to the success of Radiant
+            Memories, ensuring that every moment captured is beautifully preserved and presented. Clients appreciate his meticulous approach and the passion he brings to his work, making sure that
+            every memory is presented in its best light.
           </p>
-    </div>
-  </div>
-
-  <!-- Team Member 3 -->
-  <div class="container" style="display: flex; align-items: center; margin-bottom: 50px; min-height: 300px;">
-  <div style="flex: 1; text-align: center;">
-    <img src="Assets/Images/Team 3.jpg" alt="Saajan Bista" style="width: 200px; height: 200px; border-radius: 50%; border: 5px solid #f8f9fa; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); object-fit: cover;">
-    <h5 style="margin-top: 15px; font-weight: 700;">Saajan Bista</h5>
-    <div style="margin-top: 10px;">
-        <a href="#" style="color: #000; margin-right: 10px; font-size: 18px;"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" style="color: #000; margin-right: 10px; font-size: 18px;"><i class="fab fa-twitter"></i></a>
-        <a href="#" style="color: #000; font-size: 18px;"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
     </div>
-    <div style="flex: 2; padding-left: 20px;">
-      <h4 style="font-weight: 700;">Senior Editor</h4>
-      <p class="about-description" style="text-align: justify">
-            Saajan Bista is the creative force behind the editing team at Radiant Memories. With 6 years of experience in photo and video editing, Saajan ensures that every
-            project is polished to perfection. His keen eye for detail and storytelling transforms raw footage and images into cohesive, compelling narratives. Saajan’s expertise lies in his ability
-            to enhance the visual and emotional impact of each project, bringing out the best in every shot. He works closely with photographers and videographers to ensure that the final product not
-            only meets but exceeds client expectations. Saajan is known for his innovative techniques and dedication to maintaining the highest standards of quality. His contributions are vital to the
-            success of Radiant Memories, ensuring that every moment captured is beautifully preserved and presented. Clients appreciate his meticulous approach and the passion he brings to his work,
-            making sure that every memory is presented in its best light.
-          </p>
-    </div>
-  </div>
-</div>
-</div>
-
-
     <!-- out team end -->
     <!-- Awards start -->
     <div class="jumbotron jumbotron-fluid" style="padding: 10px">
       <h2 class="testimonial-title">Awards</h2>
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 text-center">
             <img src="Assets/Images/Trophy 1.png" alt="Award 1" class="img-fluid" style="height: 300px" />
             <h2 class="featured-story" style="text-align: justify">NPC 22</h2>
             <p style="font-family: Cormorant Garamond; font-size: 18px; text-align: justify">
@@ -213,21 +223,21 @@
     <!-- Award end -->
 
     <!-- creative start -->
-      <div class="row" style="padding: 20px">
-        <div class="col-md-8">
-          <h4 class="services-title">Crafting Memories</h4>
-          <h2 class="featured-story">Your Story, Our Lens</h2>
-          <p style="font-family: Cormorant Garamond; font-size: 28px; text-align: justify; padding: 50px">
-            Your wedding day is a once-in-a-lifetime event, and choosing the right photographer is essential to preserving its magic for years to come. we would be honored to be a part of your special
-            day.
-          </p>
-        </div>
-        <div class="col-md-3">
-          <img src="Assets/Images/creative 1.avif" alt="kissing" style="height: 400px; width: 300px" />
-        </div>
-
-        <div class="col-md-1"></div>
+    <div class="row" style="padding: 20px">
+      <div class="col-md-8">
+        <h4 class="services-title">Crafting Memories</h4>
+        <h2 class="featured-story">Your Story, Our Lens</h2>
+        <p style="font-family: Cormorant Garamond; font-size: 28px; text-align: justify; padding: 50px">
+          Your wedding day is a once-in-a-lifetime event, and choosing the right photographer is essential to preserving its magic for years to come. we would be honored to be a part of your special
+          day.
+        </p>
       </div>
+      <div class="col-md-3">
+        <img src="Assets/Images/creative 1.avif" alt="kissing" style="height: 400px; width: 300px" />
+      </div>
+
+      <div class="col-md-1"></div>
+    </div>
     <!-- creative end -->
 
     <!-- Footer Start -->
@@ -271,7 +281,7 @@
         <div class="col-md-4" style="text-align: center">
           <h4>Locate Us</h4>
           <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.587661007024!2d85.28491257514507!3d27.730014776169572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18966e51427b%3A0x5e2afbc70bfc5ec3!2sRadha%20Krishna%20Temple%2C%20Raniban!5e0!3m2!1sen!2snp!4v1736250597458!5m2!1sen!2snp" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.587661007024!2d85.28491257514507!3d27.730014776169572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18966e51427b%3A0x5e2afbc70bfc5ec3!2sRadha%20Krishna%20Temple%2C%20Raniban!5e0!3m2!1sen!2snp!4v1736250597458!5m2!1sen!2snp"
             width="300"
             height="250"
             style="border: 0"

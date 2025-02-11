@@ -36,41 +36,32 @@
   </head>
 
   <body>
-    <!-- Navigation bar start -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent shadow-sm fixed-top">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav w-100 d-flex justify-content-between">
-            <li class="nav-item"><a class="nav-link" href="Index.php">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="About.php">About</a></li>
-            <li class="nav-item"><a class="nav-link" style="margin-right: 60px" href="Services.php">Services</a></li>
-          </ul>
-          <a class="navbar-brand mx-auto" href="Index.php">
-            <img src="Assets/Images/Logo.png" width="150" height="100" class="d-inline-block align-top" alt="Logo" loading="lazy" />
-          </a>
-          <ul class="navbar-nav w-100 d-flex justify-content-between">
-            <li class="nav-item"><a class="nav-link" href="Portfolio.php">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="Gallery.php">Gallery</a></li>
-            <li class="nav-item"><a class="nav-link" href="Contact.php">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-      <script>
-        // JavaScript to add the active class based on the current page URL
-        document.addEventListener("DOMContentLoaded", function () {
-          var path = window.location.pathname.split("/").pop();
-          var target = document.querySelectorAll('.nav-link[href="' + path + '"]');
+<!-- Navigation bar start -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container">
+    <!-- Move button to the right -->
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav w-100 d-flex justify-content-between">
+        <li class="nav-item"><a class="nav-link" href="Index.php">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="About.php">About</a></li>
+        <li class="nav-item"><a class="nav-link" style="margin-right: 60px" href="Services.php">Services</a></li>
+      </ul>
+      <a class="navbar-brand mx-auto" href="Index.php">
+        <img src="Assets/Images/Logo.png" width="150" height="100" class="d-inline-block align-top" alt="Logo" loading="lazy" />
+      </a>
+      <ul class="navbar-nav w-100 d-flex justify-content-between">
+        <li class="nav-item"><a class="nav-link" href="Portfolio.php">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="Gallery.php">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contact.php">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navigation bar end -->
 
-          target.forEach(function (link) {
-            link.classList.add("active");
-          });
-        });
-      </script>
-    </nav>
-    <!-- Navigation bar end -->
 
     <!-- Carousel start -->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
